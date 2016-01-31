@@ -1,4 +1,4 @@
-<section id="pricing">
+<section id="pricing-section" data-anchor="pricing"><a id="pricing"></a>
     <div class="row">
         <div class="small-12 columns">
             <h2>Pricing</h2>

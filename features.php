@@ -1,4 +1,4 @@
-<section id="features">
+<section id="features-section" data-anchor="features"><a id="features"></a>
     <div class="row">
         <div class="small-12 columns">
             <h2 class="text-center">Features</h2>

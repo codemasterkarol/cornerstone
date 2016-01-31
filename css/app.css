@@ -82,11 +82,11 @@ nav .menu > li:not(.menu-text) > a {
     border-top: 3rem solid #efefef;
     margin: 0 auto -3rem;
 }
-#features {
+#features-section {
     background-color: #0A4D59;
     color: #fff;
 }
-#features h2 {
+#features-section h2 {
     color: #fff;
 }
 .arrow-down.features {
@@ -98,50 +98,50 @@ section {
     min-height: 100vh;
 }
 
-#features ul {
+#features-section ul {
     margin-top: 2rem;
     list-style-type: none;
     color: #0eb7c9;
     font-size: 2rem;
     text-align: center;
 }
-#features ul li > span {
+#features-section ul li > span {
     font-size: 1rem;
     vertical-align: middle;
     color: #efefef;
 }
 
-#pricing h3 {
+#pricing-section h3 {
     text-align: center;
     text-transform: lowercase;
     background: #0eb7c9;
     color: #fff;
     font-weight: 500;
 }
-#pricing ul {
+#pricing-section ul {
     list-style: none;
 }
-#pricing ul li:nth-child(even) {
+#pricing-section ul li:nth-child(even) {
     background: #efefef;
 }
-#pricing ul li {
+#pricing-section ul li {
     padding: 0.25rem;
     text-align: center;
 }
-#pricing h4 {
+#pricing-section h4 {
     text-align: center;
     color: #0EB7C9;
     font-weight: 800;
     margin-top: 1rem;
 }
-#pricing .medium-4 {
+#pricing-section .medium-4 {
     padding: 0.25rem;
 }
 .package {
     border: 1px solid #efefef;
     padding: 1rem;
 }
-#pricing .button {
+#pricing-section .button {
     margin: 2rem;
     background: #0EB7C9;
     font-weight: 700;
@@ -150,7 +150,7 @@ section {
     line-height: 1;
     padding: 0.75rem 2rem 1rem;
 }
-#pricing .button:hover {
+#pricing-section .button:hover {
     background: #0A4D59;
 }
 
@@ -158,25 +158,25 @@ section {
     border-top-color: #fff;
 }
 
-#contact {
+#contact-section {
     background: #444;
 }
-#contact h2 {
+#contact-section h2 {
     color: #fff;
 }
-#contact form {
+#contact-section form {
     width: 25rem;
     margin: 2rem auto;
     padding: 2rem;
     background: #0eb7c9;
 }
-#contact input, #contact textarea {
+#contact-section input, #contact-section textarea {
     border: none;
 }
-#contact textarea {
+#contact-section textarea {
     height: 7rem;
 }
-#contact input[type='submit'] {
+#contact-section input[type='submit'] {
     background:#0A4D59;
     color: #fff;
     padding: 0.5rem 1rem;
