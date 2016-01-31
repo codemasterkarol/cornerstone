@@ -1,11 +1,51 @@
+* {
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, em, .title, nav {
+    font-family: "Raleway", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+h2 {
+    font-weight: 700;
+    color: #0A4D59;
+    text-transform: uppercase;
+    text-align: center;
+}
+ul {
+    margin: 0;
+}
+a {
+    color: #0eb7c9;
+}
+a:hover {
+    color: #0A4D59;
+}
 header {
     padding: 20vh 15%;
     min-height: 100vh;
     background: #efefef;
 }
-header h1 {
-    display: none;
+header .logo {
+    width: 15rem;
+    max-width: 100%;
+    margin: 0 auto;
 }
+header h1, header p {
+    margin: 0;
+    line-height: 1.05;
+}
+header h1 {
+    font-weight: 800;
+    color: #0A4D59;
+    font-size: 6rem;
+    text-shadow: 1px 1px 0 #fff;
+}
+header em {
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    font-size: 2rem;
+    color: #707070;
+}
+
 .menu img {
     width: 8rem;
     max-width: 100%;
@@ -16,6 +56,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
+    z-index:999;
 }
 .menu {
     text-align: right;
@@ -27,20 +68,122 @@ nav .menu > li:not(.menu-text) > a {
     color: #fff;
     line-height: 1.5;
     font-weight: bold;
+    text-transform: lowercase;
 }
 .menu li a:hover {
     background: #0A4D59;
 }
 .arrow-down {
+    position: relative;
     width: 0;
     height: 0;
     border-left: 8rem solid transparent;
     border-right: 8rem solid transparent;
     border-top: 3rem solid #efefef;
-    margin: 0 auto;
+    margin: 0 auto -3rem;
+}
+#features {
+    background-color: #0A4D59;
+    color: #fff;
+}
+#features h2 {
+    color: #fff;
+}
+.arrow-down.features {
+    border-top-color: #0A4D59;
 }
 
 section {
-    padding: 10vh 15%;
+    padding: 15vh 15% 10vh;
     min-height: 100vh;
+}
+
+#features ul {
+    margin-top: 2rem;
+    list-style-type: none;
+    color: #0eb7c9;
+    font-size: 2rem;
+    text-align: center;
+}
+#features ul li > span {
+    font-size: 1rem;
+    vertical-align: middle;
+    color: #efefef;
+}
+
+#pricing h3 {
+    text-align: center;
+    text-transform: lowercase;
+    background: #0eb7c9;
+    color: #fff;
+    font-weight: 500;
+}
+#pricing ul {
+    list-style: none;
+}
+#pricing ul li:nth-child(even) {
+    background: #efefef;
+}
+#pricing ul li {
+    padding: 0.25rem;
+    text-align: center;
+}
+#pricing h4 {
+    text-align: center;
+    color: #0EB7C9;
+    font-weight: 800;
+    margin-top: 1rem;
+}
+#pricing .medium-4 {
+    padding: 0.25rem;
+}
+.package {
+    border: 1px solid #efefef;
+    padding: 1rem;
+}
+#pricing .button {
+    margin: 2rem;
+    background: #0EB7C9;
+    font-weight: 700;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+    line-height: 1;
+    padding: 0.75rem 2rem 1rem;
+}
+#pricing .button:hover {
+    background: #0A4D59;
+}
+
+.arrow-down.pricing {
+    border-top-color: #fff;
+}
+
+#contact {
+    background: #444;
+}
+#contact h2 {
+    color: #fff;
+}
+#contact form {
+    width: 25rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #0eb7c9;
+}
+#contact input, #contact textarea {
+    border: none;
+}
+#contact textarea {
+    height: 7rem;
+}
+#contact input[type='submit'] {
+    background:#0A4D59;
+    color: #fff;
+    padding: 0.5rem 1rem;
+}
+
+footer {
+    background: #111;
+    color: #717171;
+    padding: 2rem 0 1rem;
 }
