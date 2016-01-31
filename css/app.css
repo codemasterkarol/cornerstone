@@ -1,0 +1,46 @@
+header {
+    padding: 20vh 15%;
+    min-height: 100vh;
+    background: #efefef;
+}
+header h1 {
+    display: none;
+}
+.menu img {
+    width: 8rem;
+    max-width: 100%;
+}
+nav {
+    background: #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.menu {
+    text-align: right;
+}
+.menu li {
+    display: inline-block;
+}
+nav .menu > li:not(.menu-text) > a {
+    color: #fff;
+    line-height: 1.5;
+    font-weight: bold;
+}
+.menu li a:hover {
+    background: #0A4D59;
+}
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 8rem solid transparent;
+    border-right: 8rem solid transparent;
+    border-top: 3rem solid #efefef;
+    margin: 0 auto;
+}
+
+section {
+    padding: 10vh 15%;
+    min-height: 100vh;
+}
