@@ -1,7 +1,10 @@
 <footer>
     <div class="row">
-        <div class="small-12 columns">
-            <p class="text-right">&copy  <script>document.write(new Date().getFullYear())</script> <a href="/">Cornerstone Hosting</a></p>
+        <div class="small-12 medium-6 columns">
+            <p class="text-left">&copy  <script>document.write(new Date().getFullYear())</script> <a href="/">Cornerstone Hosting</a></p>
+        </div>
+        <div class="small-12 medium-6 columns">
+            <p class="text-right">Site by <a href="http://karolbrennan.com">Karol Brennan</a></p>
         </div>
     </div>
 </footer>
