@@ -39,7 +39,7 @@
         </div>
         <div class="small-12 medium-4 columns">
             <div class="package">
-                <h3>Pro</h3>
+                <h3>Keystone</h3>
                 <ul>
                     <li>5GB Disk Space</li>
                     <li>&infin; Data Transfer</li>
