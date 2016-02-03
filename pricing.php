@@ -26,7 +26,7 @@
                 <h3>Cornerstone</h3>
                 <ul>
                     <li>2.5GB Disk Space</li>
-                    <li>15GB Data Transfer</li>
+                    <li>10GB Data Transfer</li>
                     <li>99.99% Uptime</li>
                     <li>&infin; Email Accounts</li>
                     <li>&infin; MySQL Databases</li>
@@ -42,7 +42,7 @@
                 <h3>Keystone</h3>
                 <ul>
                     <li>5GB Disk Space</li>
-                    <li>&infin; Data Transfer</li>
+                    <li>15GB Data Transfer</li>
                     <li>99.99% Uptime</li>
                     <li>&infin; Email Accounts</li>
                     <li>&infin; MySQL Databases</li>
