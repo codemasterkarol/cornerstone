@@ -1,6 +1,0 @@
-Options +MultiViews
-AddType application/x-httpd-php .php
-
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^(www.)?cornerstone.hosting$
-RewriteRule ^(/)?$ public
