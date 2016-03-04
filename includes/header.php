@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Cornerstone Hosting</title>
-    <link rel="stylesheet" type="text/css" href="css/foundation-icons.css">
-    <link rel="stylesheet" type="text/css" href="css/foundation.css">
-    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="../css/foundation-icons.css">
+    <link rel="stylesheet" type="text/css" href="../css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="../css/app.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:900,800,700,600,500,400,300,200,100' rel='stylesheet' type='text/css'>
 
-    <script src='js/vendor/jquery.min.js'></script>
+    <script src='../js/vendor/jquery.min.js'></script>
 </head>
 <body>
 <nav>
@@ -27,7 +27,7 @@
 <header data-anchor="top">
     <div class="row">
         <div class="small-12 columns text-center">
-            <a href="#top" data-scroll="top"><img src="img/logo-only.svg" class="logo" alt="Cornerstone Hosting Logo">
+            <a href="#top" data-scroll="top"><img src="../img/logo-only.svg" class="logo" alt="Cornerstone Hosting Logo">
             <h1>cornerstone</h1>
             <p><em>Because every site needs a solid foundation.</em></p></a>
         </div>
