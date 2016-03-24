@@ -7,12 +7,12 @@
 
     <div class="row">
         <div class="small-12 columns">
-            <form>
-                <input type="text" placeholder="name">
-                <input type="email" placeholder="@">
-                <input type="tel" placeholder="phone">
-                <textarea placeholder="message"></textarea>
-                <input type="submit" value="send">
+            <div id="form-messages"></div>
+            <form id="contact-form" action="scripts/mailer.php" method="post">
+                <input type="text" id="name" placeholder="name" required>
+                <input type="email" id="email" placeholder="@" required>
+                <textarea placeholder="message" id="message" required></textarea>
+                <button>Send!</button>
             </form>
         </div>
     </div>
