@@ -9,9 +9,9 @@
         <div class="small-12 columns">
             <div id="form-messages"></div>
             <form id="contact-form" action="scripts/mailer.php" method="post">
-                <input type="text" id="name" placeholder="name" required>
-                <input type="email" id="email" placeholder="@" required>
-                <textarea placeholder="message" id="message" required></textarea>
+                <input type="text" name="name" placeholder="name" required>
+                <input type="email" name="email" placeholder="@" required>
+                <textarea name="message" placeholder="message" required></textarea>
                 <button>Send!</button>
             </form>
         </div>

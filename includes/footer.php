@@ -47,5 +47,7 @@
     }).scroll();
 </script>
 
+<script src="js/mailer.js"></script>
+
 </body>
 </html>
