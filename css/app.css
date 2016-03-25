@@ -187,6 +187,9 @@ section {
     color: #efefef;
     font-style: italic;
 }
+.g-recaptcha {
+    margin-bottom: 1rem;
+}
 
 button {
     text-transform: uppercase;

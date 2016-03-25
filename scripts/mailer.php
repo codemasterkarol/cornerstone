@@ -1,5 +1,8 @@
 <?php
 
+
+
+
 // Only process POST requests.
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get the form fields and remove whitespace.
@@ -8,11 +11,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $message = trim($_POST["message"]);
 
+    if(isset($_POST['g-recaptcha-response'])) {
+        $captcha = $_POST['g-recaptcha-response'];
+    } else {
+        http_response_code(400);
+        echo "Please check the reCaptcha.";
+        exit;
+    }
+
+    $secretKey = "6LdOrRsTAAAAAA6zaSfSPiIGiXrzkakuEoG8DOHq";
+    $verifyUrl = "https://www.google.com/recaptcha/api/siteverify";
+
+    $response=file_get_contents($verifyUrl."?secret=".$secretKey."&response=".$captcha);
+
+    $responseKeys = json_decode($response,true);
+
+    if(intval($responseKeys["success"]) !== 1) {
+       echo "<img src='../img/spam.jpeg' alt='Spammer! GTFO!'>";
+    } else {
+        echo '<h2>Thanks for posting comment.</h2>';
+    }
+
+
     // Check that data was sent to the mailer.
     if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Set a 400 (bad request) response code and exit.
         http_response_code(400);
-        echo "Oops! There was a problem with your submission. Please complete the form and try again.";
+        echo "Something is wrong with the data. It's not matching.";
         exit;
     }
 
@@ -38,13 +63,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         // Set a 500 (internal server error) response code.
         http_response_code(500);
-        echo "Oops! Something went wrong and we couldn't send your message.";
+        echo "Ah shit it couldn't send the email.";
     }
 
 } else {
     // Not a POST request, set a 403 (forbidden) response code.
     http_response_code(403);
-    echo "There was a problem with your submission, please try again.";
+    echo "FORBIDDEN!";
 }
 
 ?>
