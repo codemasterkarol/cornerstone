@@ -9,6 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:900,800,700,600,500,400,300,200,100' rel='stylesheet' type='text/css'>
 
     <script src='../js/vendor/jquery.min.js'></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 <nav>

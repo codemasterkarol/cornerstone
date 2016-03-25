@@ -181,6 +181,12 @@ section {
     color: #fff;
     padding: 0.5rem 1rem;
 }
+#form-messages {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #efefef;
+    font-style: italic;
+}
 
 button {
     text-transform: uppercase;
