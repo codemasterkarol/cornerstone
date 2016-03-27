@@ -13,6 +13,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $package = $_POST['package'];
     $message = htmlentities((trim($_POST["message"])));
 
+    $packageoptions = ['foundation','cornerstone','keystone'];
+
+    if(!in_array($package, $packageoptions)){
+        http_response_code(400);
+        echo "Please select a package";
+        exit;
+    }
+
     if(isset($_POST['g-recaptcha-response'])) {
         $captcha = $_POST['g-recaptcha-response'];
     } else {

@@ -14,13 +14,13 @@
                 <input type="email" name="email" placeholder="@" required>
                 <input type="email" name="paypal" placeholder="paypal email" required>
                 <input type="text" name="domain" placeholder="domain" required>
-                <select name="package">
+                <select name="package" required>
                     <option>Select a package...</option>
                     <option name="foundation">Foundation</option>
                     <option name="cornerstone">Cornerstone</option>
                     <option name="keystone">Keystone</option>
                 </select>
-                <textarea name="message" placeholder="comments/questions" required></textarea>
+                <textarea name="message" placeholder="comments/questions"></textarea>
                 <div class="g-recaptcha" data-sitekey="6LdOrRsTAAAAAFSTcKZjU8L8yeyeJQ-aEmB2UfvC"></div>
                 <button>Sign Up!</button>
             </form>
