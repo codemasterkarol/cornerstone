@@ -8,8 +8,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get the form fields and remove whitespace.
     $name = htmlentities(trim($_POST["name"]));
     $name = str_replace(array("\r","\n"),array(" "," "),$name);
-    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $message = htmlentities(trim($_POST["message"]));
+    $email = filter_input(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $paypal = filter_input(trim($_POST["paypal"]), FILTER_SANITIZE_EMAIL);
+    $package = $_POST['package'];
+    $message = htmlentities((trim($_POST["message"])));
 
     if(isset($_POST['g-recaptcha-response'])) {
         $captcha = $_POST['g-recaptcha-response'];
@@ -43,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $recipient = "codemasterkarol@gmail.com";
 
     // Set the email subject.
-    $subject = "Cornerstone: New contact from $name";
+    $subject = "Cornerstone: New signup from $name";
 
     // Build the email content.
     $email_content = "Name: $name\n";

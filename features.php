@@ -29,7 +29,7 @@
                 <li><span>Wordpress / CMS</span></li>
                 <li><span>Discussion Boards</span></li>
                 <li><span>E-Commerce</span></li>
-                <li><span>24/7 Support</span></li>
+                <li><span>...and much more!</span></li>
             </ul>
         </div>
     </div>

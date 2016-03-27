@@ -19,6 +19,7 @@
                 <li style="float: left;"><a href="/" class="title">cornerstone</a></li>
                 <li><a href="#features" data-scroll="features">Features</a></li>
                 <li><a href="#pricing" data-scroll="pricing">Pricing</a></li>
+                <li><a href="/signup.php">Signup</a></li>
                 <li><a href="#contact" data-scroll="contact">Contact</a></li>
             </ul>
         </div>

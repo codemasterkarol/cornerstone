@@ -201,6 +201,13 @@ button {
 button:hover {
     background: rgba(0,0,0,0.1);
 }
+#signup-form button {
+    background: #0c4d78;
+}
+#signup-form button:hover {
+    background: #0e6ba4;
+}
+
 
 footer {
     background: #111;
