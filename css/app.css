@@ -208,6 +208,12 @@ button:hover {
     background: #0e6ba4;
 }
 
+#signup-form-messages {
+    margin: 1rem 0;
+    background: #efefef;
+    border: 1px solid #ccc;
+    color: red;
+}
 
 footer {
     background: #111;
