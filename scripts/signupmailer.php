@@ -8,8 +8,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get the form fields and remove whitespace.
     $name = htmlentities(trim($_POST["name"]));
     $name = str_replace(array("\r","\n"),array(" "," "),$name);
-    $email = filter_input(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $paypal = filter_input(trim($_POST["paypal"]), FILTER_SANITIZE_EMAIL);
+    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $paypal = filter_var(trim($_POST["paypal"]), FILTER_SANITIZE_EMAIL);
     $package = $_POST['package'];
     $message = htmlentities((trim($_POST["message"])));
 
