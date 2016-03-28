@@ -184,7 +184,7 @@ section {
 #signup-form-messages:empty {
     display: none;
 }
-#signup-form-messages {
+#signup-form-messages.error {
     margin: 1rem 0;
     background: #fafafa;
     border: 1px solid red;
