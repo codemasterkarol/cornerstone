@@ -10,6 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = str_replace(array("\r","\n"),array(" "," "),$name);
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $paypal = filter_var(trim($_POST["paypal"]), FILTER_SANITIZE_EMAIL);
+    $domain = htmlentities(trim($_POST['domain']));
     $package = $_POST['package'];
     $message = htmlentities((trim($_POST["message"])));
 
@@ -42,10 +43,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Check that data was sent to the mailer.
-    if ( empty($name) OR empty($message) OR $responseKeys === null OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    if ( empty($name) OR empty($domain) OR empty($message) OR $responseKeys === null OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Set a 400 (bad request) response code and exit.
         http_response_code(400);
-        echo "No can do buddy. Go try again!";
+        echo "No can do buddy. Go try again! Make sure everything is filled out!";
         exit;
     }
 
@@ -56,9 +57,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = "Cornerstone: New signup from $name";
 
     // Build the email content.
-    $email_content = "Name: $name\n";
+    $email_content = "Name: $name\n\n";
     $email_content .= "Email: $email\n\n";
-    $email_content .= "Message:\n$message\n";
+    $email_content .= "Paypal $paypal\n\n";
+    $email_content .= "Domain: $domain\n\n";
+    $email_content .= "Package: $package\n\n";
+    $email_content .= "Message: $message\n\n";
 
     // Build the email headers.
     $email_headers = "From: $name <$email>";
