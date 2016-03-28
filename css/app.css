@@ -207,7 +207,9 @@ button:hover {
 #signup-form button:hover {
     background: #0e6ba4;
 }
-
+#signup-form-messages:empty {
+    display: none;
+}
 #signup-form-messages {
     margin: 1rem 0;
     background: #efefef;
