@@ -212,9 +212,10 @@ button:hover {
 }
 #signup-form-messages {
     margin: 1rem 0;
-    background: #efefef;
-    border: 1px solid #ccc;
+    background: #fafafa;
+    border: 1px solid red;
     color: red;
+    padding: 1rem;
 }
 
 footer {
