@@ -12,7 +12,7 @@
                 <input type="text" name="name" placeholder="name" required>
                 <input type="email" name="email" placeholder="@" required>
                 <textarea name="message" placeholder="message" required></textarea>
-                <div class="g-recaptcha" data-sitekey="6LdOrRsTAAAAAFSTcKZjU8L8yeyeJQ-aEmB2UfvC"></div>
+                <div class="g-recaptcha" id="recaptcha1"></div>
                 <button>Send!</button>
             </form>
         </div>

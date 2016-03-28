@@ -56,7 +56,7 @@
     </div>
     <div class="row">
         <div class="small-12 column text-center">
-            <p><a href="/signup" class="button">Sign Up</a></p>
+            <p><a href="#signup" data-scroll="signup" class="button">Sign Up</a></p>
         </div>
     </div>
 </section>

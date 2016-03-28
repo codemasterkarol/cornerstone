@@ -158,6 +158,44 @@ section {
     border-top-color: #fff;
 }
 
+#signup-section {
+    background: #efefef;
+}
+#signup-form {
+    background: #fff;
+    padding: 2rem;
+}
+#signup-form input, #signup-form textarea, #signup-form select {
+    box-shadow: none;
+    border: 0;
+    border-bottom: 0.15rem #ccc dotted;
+    background-color: #fff;
+}
+#signup-form textarea {
+    min-height: 8rem;
+    margin-bottom: 2rem;
+}
+#signup-form button {
+    background: #0c4d78;
+}
+#signup-form button:hover {
+    background: #0e6ba4;
+}
+#signup-form-messages:empty {
+    display: none;
+}
+#signup-form-messages {
+    margin: 1rem 0;
+    background: #fafafa;
+    border: 1px solid red;
+    color: red;
+    padding: 1rem;
+}
+
+.arrow-down.signup {
+    border-top-color: #efefef;
+}
+
 #contact-section {
     background: #444;
 }
@@ -200,22 +238,6 @@ button {
 }
 button:hover {
     background: rgba(0,0,0,0.1);
-}
-#signup-form button {
-    background: #0c4d78;
-}
-#signup-form button:hover {
-    background: #0e6ba4;
-}
-#signup-form-messages:empty {
-    display: none;
-}
-#signup-form-messages {
-    margin: 1rem 0;
-    background: #fafafa;
-    border: 1px solid red;
-    color: red;
-    padding: 1rem;
 }
 
 footer {

@@ -1,5 +1,4 @@
-<?php include("includes/header.php"); ?>
-<section class="signup">
+<section id="signup-section" data-anchor="signup"><a id="signup"></a>
     <div class="row">
         <div class="small-12 columns">
             <h2>Sign Up</h2>
@@ -21,13 +20,11 @@
                     <option name="keystone">Keystone</option>
                 </select>
                 <textarea name="message" placeholder="comments/questions"></textarea>
-                <div class="g-recaptcha" data-sitekey="6LdOrRsTAAAAAFSTcKZjU8L8yeyeJQ-aEmB2UfvC"></div>
+                <div class="g-recaptcha" id="recaptcha2"></div>
                 <button>Sign Up!</button>
             </form>
             <script src="js/signupmailer.js"></script>
         </div>
     </div>
 </section>
-
-
-<?php include("includes/footer.php"); ?>
+<div class="arrow-down signup"></div>
