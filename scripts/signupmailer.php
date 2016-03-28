@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $package = $_POST['package'];
     $message = htmlentities((trim($_POST["message"])));
 
-    $packageoptions = ['foundation','cornerstone','keystone'];
+    $packageoptions = ['Foundation','Cornerstone','Keystone'];
 
     if(!in_array($package, $packageoptions)){
         http_response_code(400);
