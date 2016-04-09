@@ -25,8 +25,7 @@
 
 
     $('#menutoggle').on('click', function(){
-        $(this).toggleClass('active');
-        $('.menu.text-right').toggleClass('show');
+        $('nav').toggleClass('show');
     });
 
     $(window).scroll(function() {

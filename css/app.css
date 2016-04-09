@@ -1,7 +1,7 @@
 body, p {
     font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
 }
-h1, h2, h3, h4, h5, h6, em, .title, nav {
+h1, h2, h3, h4, h5, h6, em, .title, nav, #menutoggle {
     font-family: "Raleway", "Helvetica Neue", "Helvetica", Arial, sans-serif;
 }
 h2 {
@@ -250,17 +250,34 @@ footer {
 
 @media screen and (max-width: 40em){
     #menutoggle {
-        display: inline;
+        font-weight: bold;
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 0.5rem 1rem;
+        background: #0a0a0a;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
     }
-
-    #menutoggle ~ li, .menu.text-right {
+    #menutoggle a {
+        color: #fff;
+    }
+    #menutoggle a:hover {
+        color: #0eb7c9;
+    }
+    #menutoggle i {
+        margin-right: 0.5rem;
+    }
+    nav {
         display: none;
     }
-
-    .menu.text-right.show {
+    nav.show {
         display: block;
+        margin-top: 2.5rem;
     }
-    .menu.text-right li {
+    nav.show li {
         display: block;
         width: 100%;
         margin: 0;

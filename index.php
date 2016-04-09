@@ -1,11 +1,9 @@
 <?php
-
-    include("includes/header.php");
-    include("includes/hero.php");
-    include("features.php");
-    include("pricing.php");
-    include("signup.php");
-    include("contact.php");
-    include("includes/footer.php");
-
+    require("includes/header.php");
+    require("includes/hero.php");
+    require("features.php");
+    require("pricing.php");
+    require("signup.php");
+    require("contact.php");
+    require("includes/footer.php");
 ?>
