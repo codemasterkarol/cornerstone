@@ -229,6 +229,7 @@ section {
 }
 .g-recaptcha {
     margin-bottom: 1rem;
+    overflow: hidden;
 }
 
 button {
@@ -312,5 +313,9 @@ footer {
     
     footer p {
         text-align: center !important;
+    }
+
+    #contact-section form, form {
+        width: 100%;
     }
 }
