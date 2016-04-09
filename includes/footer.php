@@ -24,7 +24,8 @@
     });
 
 
-    $('#menutoggle').on('click', function(){
+    $('#menutoggle').on('click', function(e){
+        e.preventDefault();
         $('nav').toggleClass('show');
     });
 
