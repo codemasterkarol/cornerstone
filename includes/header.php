@@ -19,7 +19,7 @@
     <script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" async defer></script>
 </head>
 <body>
-<div id="menutoggle"><a href="#"><i class="fi-list"></i> Cornerstone</a></div>
+<div id="menutoggle"><a href="#"><i class="fi-list"></i> cornerstone</a></div>
 <nav>
     <div class="row collapse">
         <div class="small-12 medium-8 columns">
