@@ -22,7 +22,7 @@
 <div id="menutoggle"><a href="#"><i class="fi-list"></i> cornerstone</a></div>
 <nav>
     <div class="row collapse">
-        <div class="small-12 medium-8 columns">
+        <div class="small-12 columns">
             <ul class="menu text-right">
                 <li><a href="#features" data-scroll="features">Features</a></li>
                 <li><a href="#pricing" data-scroll="pricing">Pricing</a></li>
