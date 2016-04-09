@@ -23,7 +23,7 @@
     <div class="row collapse">
         <div class="small-12 medium-4 columns">
             <ul class="menu text-left">
-                <li id="menutoggle"><a href="#"><i class="fi-list"></i> Menu</a></li>
+                <li id="menutoggle"><a href=""><i class="fi-list"></i> Menu</a></li>
                 <li><a href="/" class="title">cornerstone</a></li>
             </ul>
         </div>
