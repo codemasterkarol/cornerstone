@@ -23,6 +23,12 @@
         return false;
     });
 
+
+    $('#menutoggle').on('click', function(){
+        $(this).toggleClass('active');
+        $('.menu.text-right').toggleClass('show');
+    });
+
     $(window).scroll(function() {
         var windscroll = $(window).scrollTop();
         if (windscroll >= 100) {
@@ -47,8 +53,7 @@
     }).scroll();
 </script>
 
-<script src="js/mailer.js"></script>
-
+<script src="/js/mailer.js"></script>
 
 </body>
 </html>

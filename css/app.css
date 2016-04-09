@@ -1,4 +1,4 @@
-* {
+body, p {
     font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
 }
 h1, h2, h3, h4, h5, h6, em, .title, nav {
@@ -58,9 +58,10 @@ nav {
     width: 100%;
     z-index:999;
 }
-.menu {
-    text-align: right;
+#menutoggle{
+    display: none;
 }
+
 .menu li {
     display: inline-block;
 }
@@ -204,6 +205,7 @@ section {
 }
 #contact-section form {
     width: 25rem;
+    max-width: 100%;
     margin: 2rem auto;
     padding: 2rem;
     background: #0eb7c9;
@@ -244,4 +246,54 @@ footer {
     background: #111;
     color: #717171;
     padding: 2rem 0 1rem;
+}
+
+@media screen and (max-width: 40em){
+    #menutoggle {
+        display: inline;
+    }
+
+    #menutoggle ~ li, .menu.text-right {
+        display: none;
+    }
+
+    .menu.text-right.show {
+        display: block;
+    }
+    .menu.text-right li {
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-align: left;
+    }
+
+    header {
+        padding: 5rem 1rem 3rem;
+        min-height: 1rem;
+    }
+    header .logo {
+        width: 3rem;
+        float: left;
+    }
+
+    header h1 {
+        display: inline;
+        font-size: 2rem;
+        margin-left: 0.5rem;
+    }
+    header p, header em {
+        display: block;
+        clear: both;
+        margin-top: 2rem;
+        font-size: 1.25rem;
+    }
+
+    section {
+        min-height: 1rem;
+        padding: 5rem 1rem;
+    }
+    
+    footer p {
+        text-align: center !important;
+    }
 }
