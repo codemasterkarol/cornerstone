@@ -1,0 +1,6 @@
+{
+  "name": "Cornerstone",
+  "tagline": "A web hosting site.",
+  "body": "# Cornerstone Hosting\r\nA small web hosting company.\r\n\r\n#### Current URL\r\nhttp://cornerstone.hosting\r\n\r\n## Technology\r\nThis site is very stripped down and simple. It's just HTML, CSS, SVGs, basic PHP with a little bit of JavaScript. \r\n\r\n### Development\r\nThis project is built on the back of my own custom [Vagrant Box](https://github.com/codemasterkarol/vagrantbox)\r\n\r\n### Languages Used\r\n- HTML\r\n- CSS\r\n- PHP\r\n- JavaScript\r\n\r\n### Frameworks / Libraries Used\r\n- Foundation CSS\r\n- Foundation Icons\r\n- jQuery\r\n- Google reCaptcha\r\n- Google Fonts\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
