@@ -17,7 +17,7 @@
         <div class="small-12 medium-4 columns">
             <ul>
                 <li><span>&infin; MySQL Databases</span></li>
-                <li><span>PHP5.5 &amp; PHP MyAdmin</span></li>
+                <li><span>Multiple PHP Versions &amp; PHP MyAdmin</span></li>
                 <li><span>SSH Access</span></li>
                 <li><span>Automated Backups</span></li>
                 <li><span>Hotlink Protection</span></li>
