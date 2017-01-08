@@ -119,6 +119,8 @@
 
         // Build the email headers.
         $email_headers = "From: Cornerstone Hosting <$email>";
+        $email_headers .= "MIME-Version: 1.0\r\n";
+        $email_headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
         // Send the email.
         if (mail($email, $subject, $email_content, $email_headers)) {
