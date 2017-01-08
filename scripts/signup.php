@@ -105,22 +105,17 @@
         $subject = "Welcome to Cornerstone.";
 
         // Build the email content.
-        $email_content = "Name: $name\n\n";
-        $email_content .= "Email: $email\n\n";
-        $email_content .= "Domain: $domain\n\n";
-        $email_content .= "Package: $package\n\n";
-        $email_content .= "Password: $password\n\n";
-
-        $email_content = "
-            <h1>Welcome to Cornerstone</h1>
-            <p>Your sign up was successful! Here are your next steps and your account details are below.</p>                
-            <p>Go to your domain registrar and set your nameservers to: <ul><li>ns1.cornerstone.host</li><li>ns2.cornerstone.host</li></ul></p>
-            <table>
-                <tr><td>Domain</td><td><a href='http://{$domain}'>{$domain}</a></td></tr>
-                <tr><td>Cpanel</td><td><a href='http://{$domain}/cpanel'>{$domain}/cpanel</a></td></tr>
-                <tr><td>Username</td><td>{$username}</td></tr>
-                <tr><td>Password</td><td>{$password}</td></tr>
-            </table>";
+        $email_content = "<html><body>";
+        $email_content .= "<h1>Welcome to Cornerstone, {$name}!</h1>";
+        $email_content .= "<p>Your sign up was successful! Here are your next steps and your account details are below.</p>";
+        $email_content .= "<p>Go to your domain registrar and set your nameservers to:";
+        $email_content .= "<ul><li>ns1.cornerstone.host</li><li>ns2.cornerstone.host</li></ul></p>";
+        $email_content .= "<table>";
+        $email_content .= "<tr><td>Domain</td><td><a href='http://{$domain}'>{$domain}</a></td></tr>";
+        $email_content .= "<tr><td>Cpanel</td><td><a href='http://{$domain}/cpanel'>{$domain}/cpanel</a></td></tr>";
+        $email_content .= "<tr><td>Username</td><td>{$username}</td></tr>";
+        $email_content .= "<tr><td>Password</td><td>{$password}</td></tr>";
+        $email_content .= "</table></body></html>";
 
         // Build the email headers.
         $email_headers = "From: Cornerstone Hosting <$email>";
