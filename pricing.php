@@ -14,15 +14,16 @@
                     <li>99.99% Uptime</li>
                     <li>&infin; Email Accounts</li>
                     <li>&infin; MySQL Databases</li>
-                    <li>10 FTP Accounts</li>
-                    <li>5 Hosted Domains</li>
-                    <li>25 Sub Domains</li>
+                    <li>&infin; FTP Accounts</li>
+                    <li>&infin; Hosted Domains</li>
+                    <li>&infin; Sub Domains</li>
                 </ul>
-                <h4>$5/mo.</h4>
+                <h4><span class="strike">$5</span> $3/mo.</h4>
+                <em class="text-center">Or $30 paid annually.</em>
             </div>
         </div>
         <div class="small-12 medium-4 columns">
-            <div class="package">
+            <div class="package cornerstone">
                 <h3>Cornerstone</h3>
                 <ul>
                     <li>2.5GB Disk Space</li>
@@ -30,11 +31,12 @@
                     <li>99.99% Uptime</li>
                     <li>&infin; Email Accounts</li>
                     <li>&infin; MySQL Databases</li>
-                    <li>25 FTP Accounts</li>
-                    <li>10 Hosted Domains</li>
-                    <li>50 Sub Domains</li>
+                    <li>&infin; FTP Accounts</li>
+                    <li>&infin; Hosted Domains</li>
+                    <li>&infin; Sub Domains</li>
                 </ul>
-                <h4>$10/mo.</h4>
+                <h4><span class="strike">$10</span> $7/mo.</h4>
+                <em class="text-center">Or $75 paid annually.</em>
             </div>
         </div>
         <div class="small-12 medium-4 columns">
@@ -50,7 +52,8 @@
                     <li>&infin; Hosted Domains</li>
                     <li>&infin; Sub Domains</li>
                 </ul>
-                <h4>$20/mo.</h4>
+                <h4><span class="strike">$20</span> $10/mo.</h4>
+                <em class="text-center">Or $100 paid annually.</em>
             </div>
         </div>
     </div>

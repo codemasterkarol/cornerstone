@@ -9,23 +9,26 @@
             <ul>
                 <li><span>99.99% Uptime</span></li>
                 <li><span>cPanel Control Panel</span></li>
-                <li><span>CloudFlare Ready</span></li>
-                <li><span>&infin; Email Accounts</span></li>
-                <li><span>Webmail</span></li>
-            </ul>
-        </div>
-        <div class="small-12 medium-4 columns">
-            <ul>
-                <li><span>&infin; MySQL Databases</span></li>
-                <li><span>Multiple PHP Versions &amp; PHP MyAdmin</span></li>
+                <li><span>Webmail Access</span></li>
                 <li><span>SSH Access</span></li>
-                <li><span>Automated Backups</span></li>
-                <li><span>Hotlink Protection</span></li>
+                <li><span>Multiple PHP Versions</span></li>
+                <li><span>PHP MyAdmin</span></li>
             </ul>
         </div>
         <div class="small-12 medium-4 columns">
             <ul>
-                <li><span>Softaculous</span></li>
+                <li><span>&infin; Hosted Domains</span></li>
+                <li><span>&infin; Add-On Domains</span></li>
+                <li><span>&infin; Sub-Domains</span></li>
+                <li><span>&infin; FTP Accounts</span></li>
+                <li><span>&infin; Email Accounts</span></li>
+                <li><span>&infin; MySQL Databases</span></li>
+            </ul>
+        </div>
+        <div class="small-12 medium-4 columns">
+            <ul>
+                <li><span>Courtesy Nightly Backups</span></li>
+                <li><span>Fantastico &amp; Softaculous</span></li>
                 <li><span>Wordpress / CMS</span></li>
                 <li><span>Discussion Boards</span></li>
                 <li><span>E-Commerce</span></li>

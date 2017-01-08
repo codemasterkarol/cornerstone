@@ -10,6 +10,13 @@ h2 {
     text-transform: uppercase;
     text-align: center;
 }
+.strike {
+    text-decoration: line-through;
+    color: red;
+}
+em.text-center {
+    display: block;
+}
 ul {
     margin: 0;
 }
@@ -141,7 +148,28 @@ section {
 .package {
     border: 1px solid #efefef;
     padding: 1rem;
+    position: relative;
 }
+.package:not(.cornerstone) {
+    margin-top: 2rem;
+}
+.cornerstone.package:after {
+    content: 'Most popular!';
+    width: 100%;
+    text-align: center;
+    background: #ffae00;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.cornerstone.package {
+    box-shadow: 0 0 1rem 0.01rem rgba(0,0,0,0.2);
+    padding-bottom: 3rem;
+}
+
 #pricing-section .button {
     margin: 2rem;
     background: #0EB7C9;
@@ -165,6 +193,9 @@ section {
 #signup-form {
     background: #fff;
     padding: 2rem;
+    width: 40rem;
+    max-width: 100%;
+    margin: 1rem auto;
 }
 #signup-form input, #signup-form textarea, #signup-form select {
     box-shadow: none;
