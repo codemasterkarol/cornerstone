@@ -38,8 +38,6 @@
             }
         }
 
-        var_dump($username); die;
-
         // package options to ensure ONLY these are valid
         $packageoptions = ['corner17_Foundation','corner17_Cornerstone','corner17_Keystone'];
 
