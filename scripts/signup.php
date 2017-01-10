@@ -31,6 +31,14 @@
         $periodPosition = strrpos($domain, '.');
         $limit = $periodPosition <= 8 ? $periodPosition : 8;
         $username = substr($domain, 0, $limit);
+        // if short username, add digits to reach 8 characters
+        if(strlen($periodPosition) < 8){
+            for($i = $periodPosition; $i < 8; $i++){
+                $username .= rand(0,9);
+            }
+        }
+
+        var_dump($username); die;
 
         // package options to ensure ONLY these are valid
         $packageoptions = ['corner17_Foundation','corner17_Cornerstone','corner17_Keystone'];
@@ -57,7 +65,7 @@
 
         $verifyUrl = "https://www.google.com/recaptcha/api/siteverify";
 
-        $response=file_get_contents($verifyUrl."?secret=".$reCaptchaKey."&response=".$captcha);
+        $response = file_get_contents($verifyUrl."?secret=".$reCaptchaKey."&response=".$captcha);
 
         $responseKeys = json_decode($response,true);
 
@@ -105,17 +113,15 @@
         $subject = "Welcome to Cornerstone.";
 
         // Build the email content.
-        $email_content = "<html><body>";
-        $email_content .= "<h1>Welcome to Cornerstone, {$name}!</h1>";
-        $email_content .= "<p>Your sign up was successful! Here are your next steps and your account details are below.</p>";
-        $email_content .= "<p>Go to your domain registrar and set your nameservers to:";
-        $email_content .= "<ul><li>ns1.cornerstone.host</li><li>ns2.cornerstone.host</li></ul></p>";
-        $email_content .= "<table>";
-        $email_content .= "<tr><td>Domain</td><td><a href='http://{$domain}'>{$domain}</a></td></tr>";
-        $email_content .= "<tr><td>Cpanel</td><td><a href='http://{$domain}/cpanel'>{$domain}/cpanel</a></td></tr>";
-        $email_content .= "<tr><td>Username</td><td>{$username}</td></tr>";
-        $email_content .= "<tr><td>Password</td><td>{$password}</td></tr>";
-        $email_content .= "</table></body></html>";
+        $email_content = "Welcome to Cornerstone, {$name}!\n\n";
+        $email_content .= "Your sign up was successful! Here are your next steps and your account details are below.\n\n";
+        $email_content .= "Go to your domain registrar and set your nameservers to:\n";
+        $email_content .= "ns1.cornerstone.host\nns2.cornerstone.host\n";
+        $email_content .= "\n\n";
+        $email_content .= "Domain: <a href='http://{$domain}'>{$domain}</a>\n";
+        $email_content .= "Cpanel: <a href='http://{$domain}/cpanel'>{$domain}/cpanel</a>\n";
+        $email_content .= "Username: {$username}\n";
+        $email_content .= "Password: {$password}\n";
 
         // Build the email headers.
         $email_headers = "From: Cornerstone Hosting <$email>";
