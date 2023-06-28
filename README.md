@@ -1,18 +1,11 @@
-# Cornerstone Hosting
+# Cornerstone Hosting - 2017 (Archived)
 A small web hosting company. 
-
-#### Current URL
-http://cornerstone.hosting
 
 ## Technology
 This site is very stripped down and simple. It's just HTML, CSS, SVGs, basic PHP with a little bit of JavaScript. 
 
-#### Future Improvements
-- Payment integration
-- Open up hosting to anyone
-
 ### Development
-This project is built on the back of my own custom [Vagrant Box](https://github.com/codemasterkarol/vagrantbox)
+This project is built on the back of my own custom [Vagrant Box](https://github.com/karolbrennan/avalampch)
 
 ### Languages Used
 - HTML
